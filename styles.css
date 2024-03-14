@@ -170,3 +170,39 @@ th {
 .firmaImagen, .firmaImagen1, .firmaImagen2, .firmaImagen3,.firmaImagen4, .firmaImagen5 {
     display: none;
 }
+
+
+
+
+
+
+ /* Responsive CSS */
+ @media only screen and (max-width: 600px) {
+    /* Hide the table headers */
+    #miTabla thead {
+        display: none;
+    }
+
+    /* Make table rows display as blocks */
+    #miTabla tbody, #miTabla tr, #miTabla td {
+        display: block;
+    }
+
+    /* Add some spacing between table cells */
+    #miTabla td {
+        margin-bottom: 10px;
+    }
+
+    /* Set the table cell width to 100% */
+    #miTabla td {
+        width: 100%;
+    }
+
+    /* Adjust the appearance of the select dropdown and images */
+    #miTabla select, #miTabla img {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto; /* Center align the images */
+        display: block;
+    }
+}
