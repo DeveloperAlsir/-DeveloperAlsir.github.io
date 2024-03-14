@@ -20,20 +20,7 @@ function validarNumerico(event) {
     return true;
 }
 
-// Función para cargar la firma en una etiqueta img
-/*function cargarFirma(idImagen, input) {
-    const imagen = document.getElementById(idImagen);
-    const archivo = input.files[0];
-    const lector = new FileReader();
-
-    lector.onload = function(e) {
-        imagen.src = e.target.result;
-    };
-
-    lector.readAsDataURL(archivo);
-}*/
-
-
+// Para poder cargar las firmas desde
 function cargarFirma(select) {
     const imagenes = document.querySelectorAll('.firmaImagen');
     const opcionSeleccionada = select.options[select.selectedIndex].value;
@@ -112,6 +99,7 @@ function cargarFirma5(select) {
     }
 }
 
+// Funcion para poder imprimir
 function imprimir() {
     // Ocultar el encabezado
     document.getElementById('mainHeader').style.display = 'none';
