@@ -171,13 +171,8 @@ th {
     display: none;
 }
 
-
-
-
-
-
  /* Responsive CSS */
- @media only screen and (max-width: 750px) {
+ @media only screen and (max-width: 800px) {
     /* Hide the table headers */
     #miTabla thead {
         display: none;
