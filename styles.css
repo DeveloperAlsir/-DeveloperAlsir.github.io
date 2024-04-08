@@ -129,8 +129,6 @@ h2{
     }
 }*/
 
-
-
 table {
     border-collapse: collapse;
     width: 90%;
@@ -199,5 +197,12 @@ th {
         height: auto;
         margin: 0 auto; /* Center align the images */
         display: block;
+    }
+}
+
+@media print {
+    #contenido {
+        margin-top: 20mm; /* Margen en la parte superior */
+        margin-bottom: 05mm; /* Margen en la parte inferior */
     }
 }

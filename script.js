@@ -8,6 +8,14 @@ function loadContent(url) {
     .catch(error => console.error('Error cargando el contenido:', error));
 }
 
+document.addEventListener("DOMContentLoad", function() {
+    let fechaActual = new Date();
+    let mes = (fechaActual.getMonth() + 1).toString().padStart(2, '0');
+    let dia = fechaActual.getDate().toString().padStart(2, '0');
+    let fechaFormateada = fechaActual.getFullYear() + '-' + mes + '-' + dia;
+    document.getElementById('fecha').value = fechaFormateada;
+});
+
 // esta funcion permite solo numeros
 function validarNumerico(event) {
     let charCode = event.which ? event.which : event.keyCode;
