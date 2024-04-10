@@ -373,6 +373,11 @@
             </table>
             <hr class="my-4" style="margin-top: 20px; margin-left: 1px; margin-right: 1px;">
             
+            <!--OBSERVACIONES-->
+            <div class="form-floating mb-3" style="margin-top: 20px; margin-left: 10px; margin-right: 10px;">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Observaciones</label>
+            </div>
             <!--FIRMAS-->
             <table id="miTabla" class="table table-bordered table-striped">
                 <tbody>
@@ -408,7 +413,7 @@
     </section>
     
     <div class="btn-container">
-        <button type="button" class="btn btn-primary mb-3" id="btnGeneratePDF">GUARDAR</button>
+        <button id="guardar" type="button" class="btn btn-primary mb-3" onclick="imprimir()">GUARDAR</button>
     </div>
     
 </body>
